@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edalti Solutions - Automatización de Citas para Clínicas</title>
+    <meta name="description" content="Automatización de gestión de citas para clínicas y consultorios vía WhatsApp. Reducimos ausentismo y carga administrativa.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0066cc 0%, #004c99 100%);
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #0066cc 0%, #004c99 100%);
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .section {
+            margin-bottom: 4rem;
+        }
+        
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #0066cc;
+            font-weight: 700;
+        }
+        
+        .section p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .product-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 102, 204, 0.2);
+            border-color: #0066cc;
+        }
+        
+        .product-card h3 {
+            font-size: 1.8rem;
+            color: #0066cc;
+            margin-bottom: 1rem;
+        }
+        
+        .product-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .use-cases {
+            background: #f9f9f9;
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+        }
+        
+        .use-cases ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .use-cases li {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #0066cc;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        .contact {
+            background: linear-gradient(135deg, #0066cc 0%, #004c99 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            color: white;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .contact-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .contact-item strong {
+            display: block;
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            word-break: break-all;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        footer p {
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .products {
+                grid-template-columns: 1fr;
+            }
+            
+            .use-cases ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Edalti Solutions</div>
+    </header>
+    
+    <section class="hero">
+        <h1>Gestión de citas automatizada para tu clínica, directo en WhatsApp</h1>
+        <p>Reduce el ausentismo y libera a tu equipo de tareas repetitivas</p>
+    </section>
+    
+    <div class="container">
+        <section class="section">
+            <h2>¿Qué hacemos?</h2>
+            <p>Automatizamos la gestión de citas para clínicas y consultorios directamente en WhatsApp, el canal que tus pacientes ya usan. Sin apps complicadas, sin portales web, sin cambiar la forma en que te comunicas.</p>
+            
+            <div class="products">
+                <div class="product-card">
+                    <h3>Sofi</h3>
+                    <p>Agente de IA especializado en gestión de citas. Automatiza agendamientos, envía recordatorios, gestiona confirmaciones y reagendamientos. Todo vía WhatsApp, 24/7.</p>
+                </div>
+                
+                <div class="product-card">
+                    <h3>Melly</h3>
+                    <p>Asistente de IA para gestión de nómina. Simplifica procesos de recursos humanos y automatiza consultas frecuentes del personal.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Para quién trabajamos</h2>
+            <p>Clínicas y consultorios de 2 a 15 profesionales que buscan reducir carga administrativa sin complicar la experiencia de sus pacientes.</p>
+            
+            <div class="use-cases">
+                <h3 style="color: #0066cc; margin-bottom: 1rem;">Casos de uso</h3>
+                <ul>
+                    <li>Consultorios médicos</li>
+                    <li>Clínicas odontológicas</li>
+                    <li>Centros de especialidades</li>
+                    <li>Servicios de salud ambulatorios</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    
+    <section class="contact">
+        <h2>Contacto</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <strong>Email</strong>
+                <a href="mailto:edagudelo@edalti.com">edagudelo@edalti.com</a>
+            </div>
+            <div class="contact-item">
+                <strong>Teléfono</strong>
+                <a href="https://wa.me/573151789507">+57 315 1789507</a>
+            </div>
+            <div class="contact-item">
+                <strong>Ubicación</strong>
+                <p style="margin: 0; font-size: 1.1rem;">Hacienda El Castillo, Herrería 3 Casas 56<br>Cali, Colombia</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Edalti Solutions. Automatización inteligente para el sector salud.</p>
+    </footer>
+</body>
+</html>
