@@ -205,6 +205,51 @@
             text-decoration: underline;
         }
         
+        .platform-access {
+            background: #f9f9f9;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .platform-access h2 {
+            font-size: 2rem;
+            color: #0066cc;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .platform-access p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .platform-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .btn-platform {
+            display: inline-block;
+            background: linear-gradient(135deg, #0066cc 0%, #004c99 100%);
+            color: white;
+            text-decoration: none;
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 12px rgba(0, 102, 204, 0.25);
+        }
+
+        .btn-platform:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 102, 204, 0.35);
+        }
+
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 1.8rem;
@@ -270,6 +315,15 @@
         </section>
     </div>
     
+    <section class="platform-access">
+        <h2>Acceso a la plataforma</h2>
+        <p>Ingresa a nuestras herramientas de gestión y atención.</p>
+        <div class="platform-buttons">
+            <a href="https://agenda.edalti.com" class="btn-platform" target="_blank" rel="noopener noreferrer">Ingresar a plataforma</a>
+            <a href="https://chat.edalti.com" class="btn-platform" target="_blank" rel="noopener noreferrer">Bandeja de atención</a>
+        </div>
+    </section>
+
     <section class="contact">
         <h2>Contacto</h2>
         <div class="contact-info">
